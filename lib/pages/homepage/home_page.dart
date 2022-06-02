@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -38,9 +39,32 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: [
             Container(
-              height: MediaQuery.of(context).size.height/16,
+              height: MediaQuery.of(context).size.height/17.5,
               width: double.infinity,
-              color: Colors.orange,
+              color: Colors.grey[200],
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Expanded(
+                    child: Container(
+                      height: 35,
+                      width: 35,
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage(
+                                'images/megaa.png'),
+                            fit: BoxFit.fitHeight,
+                          ),
+                          shape: BoxShape.circle,
+                          color:Colors.transparent,
+                      ),
+                    ),
+                  ),
+                  const Text("before the announcement",style: TextStyle(fontSize: 13,color: Colors.black),),
+                  SizedBox(width: 25,),
+                  const Text("before the announcement",style: TextStyle(fontSize: 13,color: Colors.black),),
+                ],
+              ),
             ),
             SizedBox(
               height: 10,
@@ -74,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
               width: double.infinity,
               color: Colors.grey[200],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Container(
