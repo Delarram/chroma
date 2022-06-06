@@ -20,13 +20,13 @@ class _MyHomePageState extends State<MyHomePage> {
           elevation: 4,
           title: RichText(
             text: const TextSpan(
-              text: 'U',
+              text: 'Chr',
               style: TextStyle(
                 fontWeight: FontWeight.bold,color: Colors.yellow,fontSize: 35,letterSpacing: 2
               ),
               children: [
                 TextSpan(
-                  text: 'Lay',
+                  text: 'ma',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,fontSize: 35,color: Colors.black
                   ),
